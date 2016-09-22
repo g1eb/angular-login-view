@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="ExampleApp">
+<head>
+  <title>General purpose login view element for AngularJS</title>
+  <link rel="stylesheet" type="text/css" href="dist/login-view.css">
+</head>
+<body ng-controller="MainCtrl">
+
+  <a login-view user="me" on-login="print(me)">Login</a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js" charset="utf-8"></script>
+  <script src="dist/login-view.js"></script>
+
+  <script>
+    angular.module('ExampleApp', ['g1b.login-view']).
+      controller('MainCtrl', function ($scope) {
+        $scope.print = function (user) {
+          console.log('user', user);
+        };
+      });
+  </script>
+</body>
+</html>

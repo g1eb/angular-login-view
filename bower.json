@@ -1,0 +1,36 @@
+{
+  "name": "angular-login-view",
+  "version": "0.0.1",
+  "authors": [
+    "Gleb <git@gleb.nl>"
+  ],
+  "description": "General purpose login view, converted to an angular directive for your convenience.",
+  "main": [
+    "dist/login-view.js",
+    "dist/login-view.css"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "general",
+    "purpose",
+    "login",
+    "view",
+    "input",
+    "user"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/g1eb/angular-login-view",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
