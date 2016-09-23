@@ -25,7 +25,7 @@
 /**
  * Login view toggle
  */
-.login-view--toggle {
+.login-view .login-view--toggle {
   cursor: pointer;
   text-align: left;
 }
@@ -34,7 +34,7 @@
 /**
  * Login view container
  */
-.login-view--container {
+.login-view .login-view--container {
   position: absolute;
   z-index: 5;
   top: 100%;
@@ -53,15 +53,15 @@
 /**
  * Login view inputs
  */
-.login-view--container .login-input--username,
-.login-view--container .login-input--password {
+.login-view .login-view--container .login-input--username,
+.login-view .login-view--container .login-input--password {
   position: relative;
   display: block;
   height: 50px;
   padding: 25px 0 10px 0;
 }
-.login-view--container .login-input--username label,
-.login-view--container .login-input--password label {
+.login-view .login-view--container .login-input--username label,
+.login-view .login-view--container .login-input--password label {
   position: absolute;
   cursor: pointer;
   top: 25%;
@@ -71,8 +71,8 @@
   will-change: font-size;
   transition: all 100ms ease-out;
 }
-.login-view--container .login-input--username input,
-.login-view--container .login-input--password input {
+.login-view .login-view--container .login-input--username input,
+.login-view .login-view--container .login-input--password input {
   width: 100%;
   outline: none;
   font-size: 2em;
@@ -82,14 +82,14 @@
   border-color: #999;
   border-style: solid;
 }
-.login-view--container .login-input--username input:focus,
-.login-view--container .login-input--password input:focus {
+.login-view .login-view--container .login-input--username input:focus,
+.login-view .login-view--container .login-input--password input:focus {
   border-color: #777;
 }
-.login-view--container .login-input--username.active label,
-.login-view--container .login-input--password.active label,
-.login-view--container .login-input--username input:focus ~ label,
-.login-view--container .login-input--password input:focus ~ label {
+.login-view .login-view--container .login-input--username.active label,
+.login-view .login-view--container .login-input--password.active label,
+.login-view .login-view--container .login-input--username input:focus ~ label,
+.login-view .login-view--container .login-input--password input:focus ~ label {
   font-size: 1em;
   top: 5%;
 }
@@ -98,7 +98,7 @@
 /**
  * Login button
  */
-.login-view--container .login--btn {
+.login-view .login-view--container .login--btn {
   position: absolute;
   z-index: 5;
   bottom: -2.5em;
@@ -117,7 +117,7 @@
   background-color: #efefef;
   transition: background-color 0.25s ease-out;
 }
-.login-view--container .login--btn::before {
+.login-view .login-view--container .login--btn::before {
   content: "";
   position: absolute;
   right: -0.5em;
@@ -130,8 +130,8 @@
   transition: background 0.25s ease-out;
   transform: skewX(-26deg);
 }
-.login-view--container .login--btn:hover,
-.login-view--container .login--btn:hover::before {
+.login-view .login-view--container .login--btn:hover,
+.login-view .login-view--container .login--btn:hover::before {
   color: #333;
   background: #ddd;
   border-color: #777;
