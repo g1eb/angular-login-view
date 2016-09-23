@@ -14,6 +14,7 @@ directive('loginView', ['$document', function ($document) {
       user: '=',
       onLogin: '&',
       onClose: '&',
+      position: '=',
       placeholder: '=',
     },
     compile: function () {

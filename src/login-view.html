@@ -1,7 +1,7 @@
 <div class="login-view">
   <div class="login-view--toggle" ng-click="active = !active" ng-transclude>
   </div>
-  <div class="login-view--container" ng-show="!!active">
+  <div class="login-view--container" ng-show="!!active" ng-class="!!position ? position : 'bottom'">
     <div class="login-input--username" ng-class="{'active': !!user.username}">
       <input id="login-input-username" type="text" autocomplete="off" ng-model="user.username" />
       <label for="login-input-username">Username</label>
