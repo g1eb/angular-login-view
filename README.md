@@ -38,6 +38,7 @@ angular.module('myApp', [
 |Property        | Usage           | Default  | Required |
 |:------------- |:-------------|:-----:|:-----:|
 | user | JSON object representing a user with username and password | none | no |
+| position | Position of login view (choices are 'top', 'bottom', 'left' and 'right) | bottom | no |
 | placeholder | String displayed in the button that triggers login-view | Log In | no |
 | on-login | Handler function that is fired on submit of login form | none | no |
 | on-close | Handler function that is fired on close/hide of login form | none | no |
