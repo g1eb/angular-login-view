@@ -37,8 +37,6 @@
 .login-view .login-view--container {
   position: absolute;
   z-index: 5;
-  top: 100%;
-  margin-top: 25px;
   width: 400px;
   height: auto;
   min-height: 200px;
@@ -47,6 +45,26 @@
   border-radius: 0;
   border: 1px solid #aaa;
   box-sizing: border-box;
+}
+.login-view .login-view--container.top {
+  left: 0;
+  bottom: 100%;
+  margin-bottom: 75px;
+}
+.login-view .login-view--container.left {
+  top: 0;
+  right: 100%;
+  margin-right: 25px;
+}
+.login-view .login-view--container.right {
+  top: 0;
+  left: 100%;
+  margin-left: 25px;
+}
+.login-view .login-view--container.bottom {
+  left: 0;
+  top: 100%;
+  margin-top: 25px;
 }
 
 
