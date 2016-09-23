@@ -84,6 +84,7 @@
 .login-view--container .login-input--username label,
 .login-view--container .login-input--password label {
   position: absolute;
+  cursor: pointer;
   top: 25%;
   left: 0;
   color: #777;
