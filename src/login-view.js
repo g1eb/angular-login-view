@@ -20,6 +20,10 @@ directive('loginView', ['$document', function ($document) {
       return {
         pre: function () {},
         post: function (scope, element) {
+          scope.close = function() {
+            scope.active = false;
+            scope.onClose();
+          };
           $document.on('mousedown', function (e) {
             if ( !!scope.active && !element[0].contains(e.target) ) {
               scope.$apply(function () {
