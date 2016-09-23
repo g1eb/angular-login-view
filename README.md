@@ -27,10 +27,10 @@ angular.module('myApp', [
 ])
 ```
 
-3) Use the directive as attribute on any element in a view
+3) Use directive in your view
 
 ```html
-<a login-view user="me" on-login="print(me)">Login</a>
+<login-view user="me" on-login="print(me)"></login-view>
 ```
 
 ### Attributes
@@ -38,6 +38,7 @@ angular.module('myApp', [
 |Property        | Usage           | Default  | Required |
 |:------------- |:-------------|:-----:|:-----:|
 | user | JSON object representing a user with username and password | none | no |
+| placeholder | String displayed in the button that triggers login-view | Log In | no |
 | on-login | Handler function that is fired on submit of login form | none | no |
 | on-close | Handler function that is fired on close/hide of login form | none | no |
 
