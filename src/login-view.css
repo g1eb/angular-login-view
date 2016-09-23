@@ -3,10 +3,7 @@
  */
 .login-view {
   position: relative;
-  width: 100%;
-  min-width: 150px;
   height: auto;
-  min-height: 4em;
   margin: 0;
   padding: 0;
   color: #444;
@@ -40,9 +37,9 @@
 .login-view--container {
   position: absolute;
   z-index: 5;
-  top: 4.5em;
-  width: 100%;
-  min-width: 350px;
+  top: 100%;
+  margin-top: 25px;
+  width: 400px;
   height: auto;
   min-height: 200px;
   padding: 25px;
