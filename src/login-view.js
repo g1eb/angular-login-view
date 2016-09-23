@@ -13,11 +13,12 @@ directive('loginView', ['$document', function ($document) {
       user: '=',
       onLogin: '&',
       onClose: '&',
+      placeholder: '=',
     },
     compile: function () {
       return {
-        pre: function preLink() {},
-        post: function postLink(scope, element) {
+        pre: function () {},
+        post: function (scope, element) {
         }
       };
     }
