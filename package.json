@@ -1,6 +1,6 @@
 {
   "name": "angular-login-view",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "General purpose login view, converted to an angular directive for your convenience.",
   "main": "index.js",
   "dependencies": {},
