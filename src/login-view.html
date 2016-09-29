@@ -2,16 +2,18 @@
   <div class="login-view--toggle" ng-click="active = !active" ng-transclude>
   </div>
   <div class="login-view--container" ng-show="!!active" ng-class="!!position ? position : 'bottom'">
-    <div class="login-input--username" ng-class="{'active': !!user.username}">
-      <input id="login-input-username" type="text" autocomplete="off" ng-model="user.username" />
-      <label for="login-input-username">Username</label>
-    </div>
-    <div class="login-input--password" ng-class="{'active': !!user.password}">
-      <input id="login-input-password" type="password" autocomplete="off" ng-model="user.password" />
-      <label for="login-input-password">Password</label>
-    </div>
-    <button type="submit" class="login--btn" ng-click="onLogin(); close()" ng-if="!!user.username && !!user.password">
-      <span ng-bind="placeholder || 'Log In'"></span>
-    </button>
+    <form ng-submit="onLogin(); close()">
+      <div class="login-input--username" ng-class="{'active': !!user.username}">
+        <input id="login-input-username" type="text" autocomplete="off" ng-model="user.username" />
+        <label for="login-input-username">Username</label>
+      </div>
+      <div class="login-input--password" ng-class="{'active': !!user.password}">
+        <input id="login-input-password" type="password" autocomplete="off" ng-model="user.password" />
+        <label for="login-input-password">Password</label>
+      </div>
+      <button type="submit" class="login--btn" ng-if="!!user.username && !!user.password">
+        <span ng-bind="placeholder || 'Log In'"></span>
+      </button>
+    </form>
   </div>
 </div>
