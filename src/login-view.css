@@ -123,9 +123,7 @@
   left: -1px;
   cursor: pointer;
   outline: none;
-  border-top: 1px solid #aaa;
-  border-left: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
+  border: 1px solid #aaa;
   color: #555;
   width: 200px;
   height: auto;

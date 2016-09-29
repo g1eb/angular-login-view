@@ -10,8 +10,8 @@
       <input id="login-input-password" type="password" autocomplete="off" ng-model="user.password" />
       <label for="login-input-password">Password</label>
     </div>
-    <div class="login--btn" ng-click="onLogin(); close()" ng-if="!!user.username && !!user.password">
+    <button type="submit" class="login--btn" ng-click="onLogin(); close()" ng-if="!!user.username && !!user.password">
       <span ng-bind="placeholder || 'Log In'"></span>
-    </div>
+    </button>
   </div>
 </div>
